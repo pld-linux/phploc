@@ -2,12 +2,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	A tool for quickly measuring the size of a PHP project
 Name:		php-phpunit-phploc
-Version:	2.0.2
+Version:	2.0.4
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	a361773d9b5442952ce820fea7516a66
+# Source0-md5:	2d8cf318bc1c2c9f631dc6aede63bcf6
 URL:		http://pear.phpunit.de/package/phploc/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-pear-PEAR >= 1:1.9.4
