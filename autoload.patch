@@ -1,0 +1,11 @@
+--- phploc-2.0.4/./usr/share/pear/SebastianBergmann/PHPLOC/autoload.php~	2015-11-26 00:38:56.000000000 +0200
++++ phploc-2.0.4/./usr/share/pear/SebastianBergmann/PHPLOC/autoload.php	2015-11-26 00:39:15.371256072 +0200
+@@ -44,7 +44,7 @@
+ require_once 'SebastianBergmann/FinderFacade/autoload.php';
+ require_once 'SebastianBergmann/Git/autoload.php';
+ require_once 'SebastianBergmann/Version/autoload.php';
+-require_once 'Symfony/Component/Console/autoloader.php';
++require_once 'Symfony/Component/Console/autoload.php';
+ 
+ spl_autoload_register(
+     function($class) {
