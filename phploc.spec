@@ -1,12 +1,11 @@
-%define		pearname	phploc
 %include	/usr/lib/rpm/macros.php
 Summary:	A tool for quickly measuring the size of a PHP project
-Name:		php-phpunit-phploc
+Name:		phploc
 Version:	2.0.4
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
+Source0:	http://pear.phpunit.de/get/%{name}-%{version}.tgz
 # Source0-md5:	2d8cf318bc1c2c9f631dc6aede63bcf6
 URL:		http://pear.phpunit.de/package/phploc/
 BuildRequires:	php-channel(pear.phpunit.de)
@@ -20,6 +19,7 @@ Requires:	php-phpunit-FinderFacade >= 1.1.0
 Requires:	php-phpunit-Git >= 1.0.0
 Requires:	php-phpunit-Version >= 1.0.0
 Requires:	php-symfony2-Console >= 2.2.0
+Obsoletes:	php-phpunit-phploc
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
