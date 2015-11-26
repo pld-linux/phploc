@@ -1,11 +1,37 @@
---- phploc-2.0.4/./usr/share/pear/SebastianBergmann/PHPLOC/autoload.php~	2015-11-26 00:38:56.000000000 +0200
-+++ phploc-2.0.4/./usr/share/pear/SebastianBergmann/PHPLOC/autoload.php	2015-11-26 00:39:15.371256072 +0200
-@@ -44,7 +44,7 @@
- require_once 'SebastianBergmann/FinderFacade/autoload.php';
- require_once 'SebastianBergmann/Git/autoload.php';
- require_once 'SebastianBergmann/Version/autoload.php';
--require_once 'Symfony/Component/Console/autoloader.php';
+--- phploc-2.0.4/phploc~	2013-12-18 10:31:50.000000000 +0200
++++ phploc-2.0.5/phploc	2015-11-26 11:37:55.082136288 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env php
++#!/usr/bin/php
+ <?php
+ /**
+  * phploc
+@@ -42,23 +42,11 @@
+  * @since     File available since Release 1.0.0
+  */
+ 
+-$loaded = false;
+-
+-foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
+-    if (file_exists($file)) {
+-        require $file;
+-        $loaded = true;
+-        break;
+-    }
+-}
+-
+-if (!$loaded) {
+-    die(
+-        'You need to set up the project dependencies using the following commands:' . PHP_EOL .
+-        'wget http://getcomposer.org/composer.phar' . PHP_EOL .
+-        'php composer.phar install' . PHP_EOL
+-    );
+-}
++require_once 'SebastianBergmann/PHPLOC/autoload.php';
++require_once 'SebastianBergmann/FinderFacade/autoload.php';
++require_once 'SebastianBergmann/Git/autoload.php';
++require_once 'SebastianBergmann/Version/autoload.php';
 +require_once 'Symfony/Component/Console/autoload.php';
  
- spl_autoload_register(
-     function($class) {
+ $application = new SebastianBergmann\PHPLOC\CLI\Application;
+ $application->run();
