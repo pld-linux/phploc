@@ -1,5 +1,4 @@
 %define		pearname	%{name}
-%include	/usr/lib/rpm/macros.php
 Summary:	A tool for quickly measuring the size of a PHP project
 Name:		phploc
 Version:	2.0.6
