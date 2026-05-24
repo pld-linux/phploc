@@ -2,7 +2,7 @@
 Summary:	A tool for quickly measuring the size of a PHP project
 Name:		phploc
 Version:	2.0.6
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	https://github.com/sebastianbergmann/phploc/archive/%{version}/%{name}-%{version}.tar.gz
